@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>Privacy Blur</h1>
+    <p>Sembunyikan privasi chat-mu</p>
+  </header>
+
+  <label class="switch-row">
+    <span>Aktifkan Blur</span>
+    <input type="checkbox" id="enabled" class="switch">
+  </label>
+
+  <section>
+    <h2>Yang diblurkan</h2>
+    <label class="check-row">
+      <input type="checkbox" id="names">
+      <span>Nama kontak</span>
+    </label>
+    <label class="check-row">
+      <input type="checkbox" id="messages">
+      <span>Pesan chat</span>
+    </label>
+    <label class="check-row">
+      <input type="checkbox" id="avatars">
+      <span>Foto profil</span>
+    </label>
+  </section>
+
+  <section>
+    <h2>Tampilkan saat</h2>
+    <label class="radio-row">
+      <input type="radio" name="reveal" value="hover" id="reveal-hover">
+      <span>Di-hover</span>
+    </label>
+    <label class="radio-row">
+      <input type="radio" name="reveal" value="click" id="reveal-click">
+      <span>Di-klik</span>
+    </label>
+  </section>
+
+  <section>
+    <h2>Situs</h2>
+    <label class="radio-row">
+      <input type="radio" name="siteMode" value="chat" id="site-chat">
+      <span>Hanya situs chat</span>
+    </label>
+    <label class="radio-row">
+      <input type="radio" name="siteMode" value="all" id="site-all">
+      <span>Semua situs</span>
+    </label>
+    <button type="button" id="add-site" class="btn">Tambahkan situs ini</button>
+    <p id="site-status" class="status"></p>
+  </section>
+
+  <footer>Cocok untuk WhatsApp Web, Telegram, Discord, dll.</footer>
+  <script src="popup.js"></script>
+</body>
+</html>
